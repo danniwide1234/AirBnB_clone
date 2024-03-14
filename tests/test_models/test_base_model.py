@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines unittests for models/base_model.py.
+"""Define unittests for models/base_model.py.
 
 Unittest classes:
     TestBaseModel_instantiation
@@ -133,9 +133,9 @@ class TestBaseModel_save(unittest.TestCase):
     def test_save_updates_file(self):
         bm = BaseModel()
         bm.save()
-        bmid = "BaseModel." + bm.id
-        with open("file.json", "r") as f:
-            self.assertIn(bmid, f.read())
+        bmide = "BaseModel." + bm.id
+        with open("file.json", "r") as k:
+            self.assertIn(bmide, k.read())
 
 
 class TestBaseModel_to_dict(unittest.TestCase):
